@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Hasan Ahmad H - Myproject</title>
+    <style>
+        body {
+            background-color: #2d2d2d;
+            animation: gradient-animation 8s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .align-left {
+            text-align: left;
+        }
+
+        /* .w_alert {
+            width: 300px;
+            height: 70px;
+        } */
+    </style>
+</head>
+
+<body data-aos="zoom-in">
+    <div class="title mx-[30px] text-center">
+        <h1 class="text-4xl font-bold mt-5 text-white">Projects</h1> <br>
+        <p class="text-white text-lg ">"Selamat datang di galeri proyek website saya, terima kasih telah berkunjung,
+            <br>silakan lihat beberapa proyek buatan saya"
+        </p> <br>
+    </div>
+
+    <div class="mx-[30px] grid grid-cols-1 md:grid-cols-2 mt-[20px] gap-4">
+        <div data-aos="fade-right" data-aos-delay="300"
+            class="max-w-lg md:max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#262B2C] dark:border-gray-600">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/Image/Projek2.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ramadhan 1444H</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Memakai HTML and CSS</p>
+                <a href="https://hasan2310.github.io/Ramadan-1444H/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="500"
+            class="max-w-lg md:max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#262B2C] dark:border-gray-600">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/Image/Projek3.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">My Portfolio</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Memakai HTML CSS and JavaScript (Beta)</p>
+                <a href="https://hasan2310.github.io/My/"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-right" data-aos-delay="300"
+            class="max-w-lg md:max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#262B2C] dark:border-gray-600">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/Image/Projek4.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Yukkolla</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Memakai HTML CSS JavaScript and PHP</p>
+                <a onclick="btn()"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-delay="500"
+            class="max-w-lg md:max-w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-[#262B2C] dark:border-gray-600">
+            <a href="#">
+                <img class="rounded-t-lg" src="assets/Image/Projek5.png" alt="" />
+            </a>
+            <div class="p-5">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sepokat.</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hanya memakai design</p>
+                <a href="https://sepokat.nicepage.io/?version=f1da2903-eea6-4eb4-82e0-8d607f54e3f5"
+                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function btn() {
+            if (true) {
+                Swal.fire({
+                    title: "Belum tersedia",
+                    text: "Karena memakai database dan dev-nya males buat posting HEHE",
+                    showCloseButton: true,
+                    confirmButtonText: "Ok",
+                    confirmButtonColor: "gray",
+                    background: "#262B2C",
+                    color: "#fff",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location = '#';
+                    } else if (result.isDenied) {
+                        // gl ada aksi karena gk ada tombol deny hehe:)
+                    }
+                });
+            }
+        }
+
+        // Swal.fire({
+        //         position: "top-end",
+        //         text: "Welcome my project",
+        //         showConfirmButton: false,
+        //         customClass: 'w_alert',
+        //         background: "#4100ff",
+        //         color: "#fff",
+        //         timer: 1500
+        //     });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

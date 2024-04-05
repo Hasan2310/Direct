@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Hasan Ahmad H - Home</title>
+    <style>
+        body {
+            background: linear-gradient(344deg, #1c58ce, #2a78f6, #4100ff, #6f00ff);
+            background-size: 240% 240%;
+            animation: gradient-animation 8s ease infinite;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #profile {
+            transition: 0.5s;
+        }
+
+        #profile:hover {
+            box-shadow: 10px 10px 14px -3px rgba(0, 0, 0, 0.51);
+            transform: scale(0.888);
+        }
+
+        button:hover {
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <img data-aos="zoom-in" data-aos-delay="100" id="profile" style="margin: 20px auto; width: 250px;"
+        class="rounded-full" src="assets/Image/Sann.jpg" alt="">
+    <p data-aos="zoom-in" data-aos-delay="150" class="text-center text-white text-xl font-bold mt-[-10px]">Hasan Ahmad
+        Halibah</p>
+    <div data-aos="zoom-in" data-aos-delay="200" class="button text-center mt-10">
+        <a href="https://instagram.com/_sann2310">
+            <button type="button"
+                class="rounded-full bg-[#d1cdcd94] border-[1px] border-white-700 hover:bg-[#b0afaf94] px-[100px] py-3 font-bold">Instagram</button><br><br>
+        </a>
+        <a href="https://t.me/Sann2310">
+            <button type="button"
+                class="rounded-full bg-[#d1cdcd94] border-[1px] border-white-700 hover:bg-[#b0afaf94] px-[105px] py-3 font-bold">Telegram</button>
+            <br><br>
+        </a>
+        <a href="https://github.com/Hasan2310">
+            <button type="button"
+                class="rounded-full bg-[#d1cdcd94] border-[1px] border-white-700 hover:bg-[#b0afaf94] px-[115px] py-3 font-bold">Github</button>
+            <br><br>
+        </a>
+        <a href="Project.html">
+            <button type="button"
+                class="rounded-full bg-[#d1cdcd94] border-[1px] border-white-700 hover:bg-[#b0afaf94] px-[98px] py-3 font-bold">MyProject</button>
+            <br><br>
+        </a>
+    </div>
+    <div class="icon text-center">
+        <a style="margin-left: 5px;" href="https://Instagram.com/_sann2310">
+            <i class="text-white fa-brands fa-instagram fa-2xl px-1`"></i>
+        </a>
+        <a style="margin-left: 5px;" href="https://github.com/Hasan2310">
+            <i class="text-white fa-brands fa-github fa-2xl"></i>
+        </a>
+        <a style="margin-left: 5px;" href="https://t.me/Sann2310">
+            <i class="text-white fa-brands fa-telegram fa-2xl"></i>
+        </a>
+        <a style="margin-left: 5px;" href="Project.html">
+            <i class="text-white fa-solid fa-folder fa-2xl px-1`"></i>
+        </a>
+    </div>
+
+    <script class="alert">
+        // Swal.fire({
+        //     title: "Enter your name",
+        //     type: "input",
+        //     input: "text",
+        //     inputPlaceholder: "Type here!",
+        //     autocapitalize: "off",
+        //     confirmButtonText: "Ok",
+        //     confirmButtonColor: "#272932",
+        //     background: "#4100ff",
+        //     color: "#fff",
+        // }).then((result) => {
+        //     if (result.value) {
+        //         Swal.fire({
+        //             title: "Welcome <br>" + result.value,
+        //             confirmButtonText: "Ok",
+        //             confirmButtonColor: "#272932",
+        //             background: "#4100ff",
+        //             color: "#fff",
+        //         });
+        //     }
+        // });
+
+        // function btn() {
+        //     if (true) {
+        //         Swal.fire({
+        //             title: "Anda akan di arahkan <br> ke instagram",
+        //             showCancelButton: true,
+        //             confirmButtonText: "Ya",
+        //             cancelButtonText: "Tidak",
+        //             confirmButtonColor: "#272932",
+        //             cancelButtonColor: "red",
+        //             background: "#4100ff",
+        //             color: "#fff",
+        //         }).then((result) => {
+        //             if (result.isConfirmed) {
+        //                 window.location = 'https://instagram.com/hasanahmadhalibah';
+        //             } else if (result.isDenied) {
+        //                 // gl ada aksi karena gk ada tombol deny hehe:)
+        //             }
+        //         });
+        //     }
+        // }
+
+        // bikin loading
+        // document.onreadystatechange = function () {
+        //     if (document.readyState !== "complete") {
+        //         document.querySelector(
+        //             "body").style.visibility = "hidden";
+        //         document.querySelector(
+        //             ".loader").style.visibility = "visible";
+        //     } else {
+        //         document.querySelector(
+        //             ".loader").style.display = "none";
+        //         document.querySelector(
+        //             "body").style.visibility = "visible";
+        //     }
+        // };
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
